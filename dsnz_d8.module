@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains dsnz_d8.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dsnz_d8_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dsnz_d8 module.
+    case 'help.page.dsnz_d8':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drupal South NZ D8') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dsnz_d8_theme() {
+  return [
+    'event_page' => [
+      'variables' => [
+        'date' => NULL,
+        'place' => NULL,
+        'audience' => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,5 @@
+dsnz_d8.event:
+  title: Event link
+  description: 'This is Drupal south event page link'
+  parent: system.admin_structure
+  route_name: dsnz_d8.event

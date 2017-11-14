@@ -1,0 +1,16 @@
+dsnz_d8.event:
+  path: '/event'
+  defaults:
+    _controller: '\Drupal\dsnz_d8\Controller\Dsnzd8Controller::eventPage'
+    _title: 'Event Page'
+  requirements:
+    _permission: 'access content'
+
+dsnz_d8.load_event_detail:
+  path: '/load-event-detail'
+  defaults:
+    _controller: '\Drupal\dsnz_d8\Controller\Dsnzd8Controller::loadEventDetail'
+    _title: 'load event detail'
+  requirements:
+    _permission: 'access content'
+

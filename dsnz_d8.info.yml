@@ -1,0 +1,5 @@
+name: Drupal South NZ D8
+type: module
+description: Drupal South NZ D8
+core: 8.x
+package: Custom

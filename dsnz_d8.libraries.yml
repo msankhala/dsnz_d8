@@ -1,0 +1,6 @@
+dsnz_d8.commands:
+  version: VERSION
+  js:
+    js/commands.js: {}
+  dependencies:
+     - core/drupal.ajax
